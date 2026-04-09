@@ -28,7 +28,7 @@
   border: none;
   border-radius: 0px;
   font-family: "JetBrainsMono Nerd Font";
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   min-height: 20px;
   margin: 0;
@@ -72,17 +72,17 @@ button {
   margin: 0px 0px 0px 0px;
   color: @text;
   border-radius: 0;
-  border-top: 5px solid @gray-light-color;
+  border-top: 4px solid @gray-light-color;
 }
 
 #workspaces button:not(.empty) {
   color: @focused;
-  border-top: 5px solid @aqua-color;
+  border-top: 4px solid @aqua-color;
 }
 
 #workspaces button.empty {
   color: @hover-gray;
-  border-top: 5px solid @second-background;
+  border-top: 4px solid @second-background;
 }
 
 #workspaces button:hover {
@@ -97,12 +97,12 @@ button {
 
 #workspaces button.special {
   color: @focused;
-  border-top: 5px solid @purple-color;
+  border-top: 4px solid @purple-color;
 }
 
 #workspaces button.urgent {
   color: @text;
-  border-top: 5px solid @red-color;
+  border-top: 4px solid @red-color;
 }
 
 .modules-right > widget:last-child > #workspaces {
@@ -113,79 +113,80 @@ button {
   margin: 0 0 0 5px;
   padding: 0 5px;
   color: @text;
-  border-top: 5px solid @red-color;
+  border-top: 4px solid @red-color;
 }
 
 #mpris.playing {
   border-radius: 0;
   color: @text;
-  border-top: 5px solid @aqua-color;
+  border-top: 4px solid @aqua-color;
 }
 
 #window {
   color: @focused;
   padding: 0 5px;
-  border-top: 5px solid @second-background;
+  border-top: 4px solid @second-background;
 }
 
 window#waybar.empty #window {
   font-style: italic;
   border-top: 0px;
+  border-top: 4px solid @second-background;
 }
 
 #network.ethernet {
   color: @text;
-  border-top: 5px solid @aqua-color;
+  border-top: 4px solid @aqua-color;
 }
 
 #network.wifi {
   color: @text;
-  border-top: 5px solid @aqua-color;
+  border-top: 4px solid @aqua-color;
 }
 
 #network.disconnected {
   color: @urgent;
-  border-top: 5px solid @red-color;
+  border-top: 4px solid @red-color;
 }
 
 #idle_inhibitor {
   color: @focused-darker;
-  border-top: 5px solid @orange-color;
+  border-top: 4px solid @orange-color;
 }
 
 #clock {
   color: @focused;
-  border-top: 5px solid @second-background;
+  border-top: 4px solid @second-background;
 }
 
 #language {
   color: @text;
-  border-top: 5px solid @orange-color;
+  border-top: 4px solid @orange-color;
 }
 
 #wireplumber {
   color: @focused-darker;
-  border-top: 5px solid @purple-color;
+  border-top: 4px solid @purple-color;
 }
 
 #wireplumber.muted {
   color: @text;
-  border-top: 5px solid @second-background;
+  border-top: 4px solid @second-background;
 }
 
 #cpu {
   color: @text;
-  border-top: 5px solid @green-color;
+  border-top: 4px solid @green-color;
 }
 
 #memory {
   color: @text;
-  border-top: 5px solid @blue-color;
+  border-top: 4px solid @blue-color;
 }
 
 #custom-capslock {
   color: @text;
-  border-top: 5px solid @red-color;
+  border-top: 4px solid @red-color;
 }
 
 #mpris,
@@ -199,18 +200,6 @@ window#waybar.empty #window {
   color: @text;
   padding: 0;
 }
-
-/* #mpris:hover, */
-/* #cpu:hover, */
-/* #memory:hover, */
-/* #wireplumber.muted:hover, */
-/* #wireplumber:hover, */
-/* #custom-capslock:hover, */
-/* #language:hover, */
-/* #network:hover, */
-/* #idle_inhibitor:hover { */
-/*   color: @hover-gray; */
-/* } */
 
 #idle_inhibitor {
   padding: 0;
@@ -227,5 +216,5 @@ window#waybar.empty #window {
 #tray {
   color: #FFFFFF;
   padding: 0;
-  border-top: 5px solid @second-background;
+  border-top: 4px solid @second-background;
 }

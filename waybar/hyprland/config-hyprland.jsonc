@@ -1,6 +1,6 @@
 {
   // General
-  "height": 30,
+  "height": 29,
   "spacing": 12,
   "position": "top",
 
@@ -19,8 +19,6 @@
     "group/Language",
     "custom/split",
     "group/Volume",
-    // "custom/split",
-    // "group/System",
     "custom/split",
     "group/Network",
     "custom/split",
