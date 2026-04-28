@@ -14,7 +14,7 @@ choice=$(echo -e "$options" | fuzzel \
     --dmenu \
     --prompt "System: " \
     --lines 4 \
-    --width 25 \
+    --width 15 \
     --icon-theme Papirus-Dark)
 
 case "$choice" in

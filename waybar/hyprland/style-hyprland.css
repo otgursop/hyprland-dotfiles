@@ -68,7 +68,7 @@ button {
 }
 
 #workspaces button {
-  padding: 0px 6px;
+  padding: 0px 10px 0px 10px;
   margin: 0px 0px 0px 0px;
   color: @text;
   border-radius: 0;
@@ -184,18 +184,12 @@ window#waybar.empty #window {
   border-top: 4px solid @blue-color;
 }
 
-#custom-capslock {
-  color: @text;
-  border-top: 4px solid @red-color;
-}
-
 #mpris,
 #tray,
 #cpu,
 #memory,
 #network,
 #wireplumber,
-#custom-capslock,
 #language {
   color: @text;
   padding: 0;

@@ -8,13 +8,14 @@
   "modules-left": [
     "group/Workspaces",
     "custom/split",
-    "group/Windows"
+    "group/Windows",
+    "custom/split",
+    "mpris"
   ],
 
   "modules-center": [],
 
   "modules-right": [
-    "mpris",
     "custom/split",
     "group/Language",
     "custom/split",
@@ -131,16 +132,16 @@
     "show-special": true,
     "format": "{icon}",
     "format-icons": {
-        "special": "sw",
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
+        "special": " ",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
         "5": "5",
         "6": "6",
         "7": "7",
-        "8": "%",
-        "9": "term",
+        "8": " ",
+        "9": "a",
         "10": "*"
     },
     "persistent-workspaces": {
@@ -168,15 +169,17 @@
 
   // Default
   "mpris": {
-    "format": "[{status_icon}] - sound",
+    "tooltip": true,
+    "tooltip-format": "{dynamic}", //"From {player}: {title}\nAlbum: {album}\nArtist: {artist}\nLength: {length}",
+    "format": "[{status_icon}] -  Music",
     "interval": 1,
-    "dynamic-len": 40,
+    "dynamic-len": 50,
     "status-icons": {
       "playing": "󰏤",
       "paused": "󰐊",
       "stopped": "..."
     },
-    "dynamic-order": ["artist"]
+    "dynamic-order": ["title", "album", "artist", "position", "length"]
   },
 
   "cpu": {
@@ -208,7 +211,6 @@
   },
 
   "network": {
-    "interface": "wlp0s19f2u1",
     "interval": 10,
     "family": "ipv4",
     "rfkill": true,
@@ -234,24 +236,14 @@
     "interval": 5,
     // "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     // "on-click-right": "exec blueman-manager",
-    // "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
-    // "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
-    "scroll-step": 5,
+    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+    "scroll-step": 1,
     "tooltip-format": "{node_name}"
   },
 
   "tray": {
     "icon-size": 20,
     "spacing": 5
-  },
-
-  // Custom
-  // "custom/language": {
-  //   "format": "{}",
-  //   "exec": "~/.config/waybar/scripts/keyboard_status.sh", 
-  //   "interval": 1,
-  //   "signal": 5,
-  //   "on-click": "~/.config/waybar/scripts/toggle_layout.sh",
-  //   "tooltip": false
-  // },
+  }
 }

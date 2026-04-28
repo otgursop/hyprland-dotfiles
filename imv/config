@@ -13,21 +13,16 @@ overlay_background_alpha = 90
 overlay_position_bottom = true
 
 recursively = true
-
 suppress_default_binds = false
 
 title_text = $(echo "imv: ${imv_current_file##*/} (${imv_current_index}/${imv_file_count})")
 
 [binds]
 q = quit
-
 f = fullscreen
-
 z = scaling full
-
 n = next
 p = prev
-
 o = overlay
 
 # Reset to defaults
